@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katya Scekic — Photography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">Katya <span>Scekic</span></a>
+    <nav class="nav">
+      <a href="#gallery">Портфолио</a>
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#blog">Блог</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Меню">&#9776;</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('images/gallery/venice/DSC_9391.jpg')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Katya Scekic</h1>
+    <p>Travel · Архитектура · Портреты</p>
+    <a href="#gallery" class="btn">Смотреть портфолио</a>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="container">
+    <h2 class="section-title">Портфолио</h2>
+    <div class="filters"></div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<section id="about" class="section alt">
+  <div class="container about-inner">
+    <div class="about-photo">
+      <img src="images/gallery/portraits/DSC_6860.jpg" alt="Katya Scekic">
+    </div>
+    <div class="about-text">
+      <h2 class="section-title">Обо мне</h2>
+      <p>
+        Меня зовут Катя. Я фотограф и много путешествую — снимаю Венецию,
+        Дубровник, Черногорию, Болгарию. Помимо travel-съёмки — портреты,
+        а ещё люблю искать детали: двери, окна, тени и отражения,
+        из которых складываются отдельные серии.
+      </p>
+      <p>
+        Готова выехать в любую точку — для путешествия, портретной сессии
+        или городского проекта.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container">
+    <h2 class="section-title">Услуги и цены</h2>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Портретная съёмка</h3>
+        <p class="price">от 8 000 ₽</p>
+        <ul>
+          <li>1–2 часа съёмки</li>
+          <li>20+ обработанных фото</li>
+          <li>Онлайн-галерея</li>
+        </ul>
+      </div>
+      <div class="price-card featured">
+        <h3>Репортаж / событие</h3>
+        <p class="price">от 20 000 ₽</p>
+        <ul>
+          <li>До 6 часов съёмки</li>
+          <li>100+ обработанных фото</li>
+          <li>Выезд по стране</li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <h3>Travel-съёмка</h3>
+        <p class="price">от 15 000 ₽</p>
+        <ul>
+          <li>Выезд за рубеж</li>
+          <li>50+ обработанных фото</li>
+          <li>Индивидуальный маршрут</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="section alt">
+  <div class="container">
+    <h2 class="section-title">Блог</h2>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <img src="images/gallery/dubrovnik/DSC_2400.jpg" alt="">
+        <h3>Как я готовлюсь к travel-съёмке</h3>
+        <p>Небольшие заметки о подготовке к съёмкам в новых локациях.</p>
+      </article>
+      <article class="blog-card">
+        <img src="images/gallery/montenegro_view/DSC_0659.jpg" alt="">
+        <h3>Свет в пейзажной фотографии</h3>
+        <p>Почему золотой час — не единственное время для хороших кадров.</p>
+      </article>
+      <article class="blog-card">
+        <img src="images/gallery/doors/DSC_9802.jpg" alt="">
+        <h3>Почему я снимаю двери и окна</h3>
+        <p>Как из простых деталей города складывается отдельная серия.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact-inner">
+    <h2 class="section-title">Контакты</h2>
+    <p class="contact-sub">Оставьте заявку — отвечу в течение суток.</p>
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-row">
+        <input type="text" name="shootType" placeholder="Тип съёмки (travel / портрет / репортаж)">
+        <input type="date" name="date" placeholder="Желаемая дата">
+      </div>
+      <textarea name="message" rows="5" placeholder="Расскажите о вашей идее съёмки"></textarea>
+      <button type="submit" class="btn">Отправить заявку</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Katya Scekic Photography</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
